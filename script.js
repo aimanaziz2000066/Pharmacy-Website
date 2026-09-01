@@ -117,7 +117,45 @@ const products = [
         price: 8.49,
         label: "MED",
         image: "images/antiseptic.jpg"
-    }
+    },
+    {
+    id: 13,
+    name: "Ibuprofen",
+    category: "medicine",
+    description: "Helps relieve pain, inflammation, and fever.",
+    price: 6.99,
+    label: "MED",
+    image: "images/ibuprofen.jpg"
+},
+
+{
+    id: 14,
+    name: "Diclofenac",
+    category: "medicine",
+    description: "Used for temporary relief of pain and inflammation.",
+    price: 7.99,
+    label: "MED",
+    image: "images/diclofenac.jpg"
+},
+
+{
+    id: 15,
+    name: "Omeprazole",
+    category: "medicine",
+    description: "Helps reduce stomach acid and relieve heartburn.",
+    price: 9.99,
+    label: "MED",
+    image: "images/omeprazole.jpg"
+},
+{
+    id: 16,
+    name: "Allergy Tablets",
+    category: "medicine",
+    description: "Helps relieve common allergy symptoms.",
+    price: 10.99,
+    label: "MED",
+    image: "images/allergy-tablets.jpg"
+}
 ];
 
 
