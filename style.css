@@ -1292,3 +1292,186 @@ BIGGER BUTTONS
     height: 50px;
     font-size: 29px;
 }
+/* =========================
+BIGGER TEXT - WHOLE WEBSITE
+========================= */
+
+/* Navbar */
+.logo {
+    font-size: 28px;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+/* Hero */
+.hero-tag {
+    font-size: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 5.5vw, 74px);
+}
+
+.hero-text > p {
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+/* Hero Features */
+.hero-features strong {
+    font-size: 27px;
+}
+
+.hero-features span {
+    font-size: 16px;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+    font-size: 19px;
+}
+
+/* Search */
+.search-box input {
+    font-size: 18px;
+}
+
+.search-box button {
+    font-size: 18px;
+}
+
+/* Section Headings */
+.section-heading span {
+    font-size: 16px;
+}
+
+.section-heading h2 {
+    font-size: 46px;
+}
+
+.section-heading p {
+    font-size: 18px;
+}
+
+/* Categories */
+.category-card h3 {
+    font-size: 21px;
+}
+
+.category-card p {
+    font-size: 16px;
+}
+
+.category-icon {
+    font-size: 14px;
+}
+
+/* Products */
+.product-category {
+    font-size: 13px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+}
+
+.product-info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.price {
+    font-size: 23px;
+}
+
+.add-btn {
+    font-size: 16px;
+}
+
+/* About */
+.about-box > span {
+    font-size: 16px;
+}
+
+.about-box h2 {
+    font-size: 48px;
+}
+
+.about-box > p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.about-stats strong {
+    font-size: 32px;
+}
+
+.about-stats span {
+    font-size: 15px;
+}
+
+/* Contact */
+.contact-card h3 {
+    font-size: 21px;
+}
+
+.contact-card p {
+    font-size: 16px;
+}
+
+.contact-icon {
+    font-size: 14px;
+}
+
+/* Footer */
+.footer-content p {
+    font-size: 16px;
+}
+
+.footer-links a {
+    font-size: 16px;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+/* Cart */
+.cart-header h2 {
+    font-size: 28px;
+}
+
+.empty-cart {
+    font-size: 17px;
+}
+
+.cart-item h4 {
+    font-size: 16px;
+}
+
+.cart-item-price {
+    font-size: 15px;
+}
+
+.quantity-controls span {
+    font-size: 16px;
+}
+
+.remove-btn {
+    font-size: 14px;
+}
+
+.cart-total {
+    font-size: 19px;
+}
+
+.cart-total strong {
+    font-size: 23px;
+}
+
+.checkout-btn {
+    font-size: 19px;
+}
