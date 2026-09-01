@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediCare Pharmacy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                <span>M</span>
+                MediCare
+            </a>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#products">Medicines</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="openCart()">
+                    Cart
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" onclick="toggleMenu()">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="hero-tag">YOUR HEALTH, OUR PRIORITY</span>
+
+                <h1>
+                    Trusted Healthcare
+                    <strong>At Your Doorstep</strong>
+                </h1>
+
+                <p>
+                    Shop medicines, healthcare products and wellness essentials
+                    from your trusted online pharmacy.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="primary-btn">
+                        Shop Medicines
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Us
+                    </a>
+                </div>
+
+                <div class="hero-features">
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Support</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Genuine</span>
+                    </div>
+
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Delivery</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="medical-card">
+
+                    <div class="medical-icon">+</div>
+
+                    <h3>Healthcare Made Easy</h3>
+
+                    <p>
+                        Quality medicines and healthcare products.
+                    </p>
+
+                    <div class="doctor-info">
+                        <div class="doctor-avatar">DR</div>
+
+                        <div>
+                            <strong>Professional Care</strong>
+                            <span>Trusted Pharmacy</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search medicines or healthcare products..."
+                    onkeyup="searchProducts()"
+                >
+
+                <button onclick="searchProducts()">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span>SHOP BY CATEGORY</span>
+                <h2>Healthcare Categories</h2>
+                <p>
+                    Find everything you need for your health and wellness.
+                </p>
+            </div>
+
+            <div class="category-grid">
+
+                <button onclick="filterProducts('all')" class="category-card active">
+                    <div class="category-icon">ALL</div>
+                    <h3>All Products</h3>
+                    <p>View everything</p>
+                </button>
+
+                <button onclick="filterProducts('medicine')" class="category-card">
+                    <div class="category-icon">MED</div>
+                    <h3>Medicines</h3>
+                    <p>Essential medicines</p>
+                </button>
+
+                <button onclick="filterProducts('vitamin')" class="category-card">
+                    <div class="category-icon">VIT</div>
+                    <h3>Vitamins</h3>
+                    <p>Daily supplements</p>
+                </button>
+
+                <button onclick="filterProducts('personal')" class="category-card">
+                    <div class="category-icon">CARE</div>
+                    <h3>Personal Care</h3>
+                    <p>Health essentials</p>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products-section" id="products">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span>OUR PRODUCTS</span>
+                <h2>Popular Healthcare Products</h2>
+                <p>
+                    Quality products selected for your everyday healthcare needs.
+                </p>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <div id="noProducts" class="no-products">
+                No products found.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="container about-content">
+
+            <div class="about-box">
+                <span>ABOUT MEDICARE</span>
+
+                <h2>
+                    Your Trusted Partner
+                    <strong>In Better Health</strong>
+                </h2>
+
+                <p>
+                    MediCare Pharmacy is dedicated to providing reliable
+                    healthcare products with quality service. Our goal is to
+                    make healthcare shopping simple, convenient and accessible.
+                </p>
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>10K+</strong>
+                        <span>Customers</span>
+                    </div>
+
+                    <div>
+                        <strong>500+</strong>
+                        <span>Products</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Support</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span>GET IN TOUCH</span>
+                <h2>Contact Our Pharmacy</h2>
+                <p>
+                    Have a question? Our team is here to help.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <div class="contact-icon">01</div>
+                    <h3>Call Us</h3>
+                    <p>+92 300 1234567</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">02</div>
+                    <h3>Email Us</h3>
+                    <p>info@medicare.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">03</div>
+                    <h3>Visit Us</h3>
+                    <p>Main Healthcare Street, Karachi</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo">
+                    <span>M</span>
+                    MediCare
+                </a>
+
+                <p>
+                    Your trusted online pharmacy for quality healthcare.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Medicines</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 MediCare Pharmacy. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button onclick="closeCart()" class="close-cart">
+                ×
+            </button>
+        </div>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
